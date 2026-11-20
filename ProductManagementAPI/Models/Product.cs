@@ -1,0 +1,20 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ProductManagementAPI.Models
+{
+    public class Product
+    {
+        [Key]
+        public int Id { get; set; }
+        
+        public string Name { get; set; } = string.Empty;
+
+        public string Description { get; set; } = string.Empty;
+
+        public decimal Price { get; set; } = decimal.Zero;
+
+        public string Color {  get; set; } = string.Empty;
+
+        public int Stock { get; set; }
+    }
+}
